@@ -22,7 +22,10 @@ var sdpConstraints = {
 
 /////////////////////////////////////////////
 
-var room = 'foo';
+var room = window.location.hash.substring(1);
+if (!room) {
+  room = window.location.hash = randomToken();
+}
 // Could prompt for room name:
 // room = prompt('Enter room name:');
 
@@ -343,4 +346,8 @@ function removeCN(sdpLines, mLineIndex) {
 
   sdpLines[mLineIndex] = mLineElements.join(' ');
   return sdpLines;
+}
+
+function randomToken() {
+  return Math.floor((1 + Math.random()) * 1e16).toString(16).substring(1);
 }
