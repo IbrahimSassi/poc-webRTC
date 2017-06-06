@@ -1,15 +1,9 @@
 {
-  "name": "poc-webrtc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ibrahim Sassi",
-  "license": "ISC",
+  "name": "webrtc-codelab",
+  "version": "0.0.1",
+  "description": "WebRTC codelab",
   "dependencies": {
-    "webrtc-adapter": "^4.0.0"
+    "node-static": "0.7.7",
+    "socket.io": "1.2.0"
   }
 }
