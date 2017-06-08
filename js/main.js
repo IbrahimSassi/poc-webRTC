@@ -117,7 +117,8 @@ function gotStream(stream) {
 }
 
 var constraints = {
-  video: true
+  video: true,
+  audio: true
 };
 
 console.log('Getting user media with constraints', constraints);
