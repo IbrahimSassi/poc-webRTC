@@ -18,7 +18,10 @@ var options = {
 var fileServer = new (nodeStatic.Server)();
 var app = https.createServer(options,function (req, res) {
   fileServer.serve(req, res);
-})  .listen(9000);
+}).listen(10000);
+
+console.log("Server running on port 10000");
+
 
 
 
